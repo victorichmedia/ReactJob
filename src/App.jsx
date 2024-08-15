@@ -25,7 +25,7 @@ const App = () => {
   };
 
   // Add Delete Job
-  const deleteJob = async (d) => {
+  const deleteJob = async (id) => {
     const res = await fetch(`/api/jobs/${id}`, {
       method: 'DELETE',
     });
